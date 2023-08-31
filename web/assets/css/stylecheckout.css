@@ -1,0 +1,386 @@
+* {
+    box-sizing: border-box;
+    /* font-family: 'Signika Negative', 'sans-serif'; */
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+
+body {
+    background-color: #f4f4f4;
+}
+
+.banner {
+    height: 400px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)), url(../img/checkout/banner.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-text {
+    text-align: center;
+}
+
+.banner-text h4 {
+    color: #FF6B6B;
+    font-size: 26px;
+}
+
+.banner-text h1 {
+    color: #fff;
+    font-size: 45px;
+}
+
+
+.title-page {
+    margin-top: 20px;
+}
+
+.title-page h4 {
+    font-size: 20px;
+}
+
+.title-page a {
+    font-size: 20px;
+    color: #FF6B6B;
+}
+
+.background-container {
+    background-color: #f4f4f4;
+    min-height: 100vh;
+}
+
+
+.background-container .row {
+    width: 100%;
+    margin-bottom: 50px;
+    background-color: #f4f4f4;
+}
+
+
+.left-tbody td {
+    text-align: center;
+}
+
+.table-cart {
+    width: 68%;
+    float: left;
+    margin-bottom: 50px;
+    background-color: white;
+}
+
+.table-cart input {
+    width: 60%;
+    border: none;
+}
+
+.table-cart .in4 input {
+    border: 1px solid #ccc;
+    padding: 8px;
+}
+
+.table-cart thead th {
+    text-align: center;
+}
+
+.table-cart  tr td {
+    vertical-align: middle;
+    /* width: 50px; */
+}
+
+.table-cart  tr td:first-child {
+    text-align: left;
+    width: 150px;
+    font-weight: 600;
+}
+
+.table-cart thead th:first-child {
+    text-align: left;
+    max-width: 450px;
+    min-width: 350px;
+}
+
+td {
+    padding: 13px 15px;
+}
+
+.table-cart .product {
+    display: flex;
+    flex-direction: c;
+    align-items: center;
+}
+
+.table-cart .product p {
+    padding-left: 10px;
+    margin: 0;
+    font-size: 16px;
+}
+
+.table-cart .quantity input {
+    text-align: center;
+    width: 60px;
+}
+
+
+.table-cart .back-to-cart td {
+    text-align: left;
+    width: 60px;
+}
+
+.table-cart .back-to-cart a {
+    color: #000000;
+}
+
+.checkout p {
+    font-size:17px;
+    /* color: #757575; */
+    color: #000000;
+    font-weight: 600;
+}
+
+
+
+.table-checkout {
+    width: 30%;
+    margin: 0 auto;
+    margin: 0;
+    float: right;
+    background-color: white;
+}
+
+.table-checkout .payment td {
+    padding: 2px 15px;
+}
+
+.table-checkout .vnpay-method {
+
+}
+
+.table-checkout .vnpay-method label {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.table-checkout .vnpay-method label input[type='radio'] {
+    position: absolute;
+    height: 1px;
+    width: 1px;
+    visibility: hidden;
+    clip: rect(0px, 0px, 0px, 0px);
+    opacity: 0;
+}
+
+.table-checkout .vnpay-method input[type="radio"]:checked + .radio-fake {
+    border-color: rgb(11, 116, 229);
+}
+
+.table-checkout .vnpay-method input[type="radio"]:checked + .radio-fake::before {
+    transform: scale(1);
+}
+
+.table-checkout .vnpay-method .radio-fake {
+    width: 18px;
+    height: 18px;
+    border: 1px solid rgb(196, 196, 207);
+    border-radius: 50%;
+    margin-right: 5px;
+    position: relative;
+    z-index: 1;
+    color: rgb(120, 120, 120);
+    flex-shrink: 0;
+    cursor: pointer;
+}
+
+.table-checkout .vnpay-method .radio-fake::before {
+    content: "";
+    position: absolute;
+    left: 4px;
+    top: 4px;
+    width: 8px;
+    height: 8px;
+    background-color: rgb(11, 116, 229);
+    border-radius: 50%;
+    transform: scale(0);
+    transition: transform 0.3s ease 0s;
+}
+
+.table-checkout .vnpay-method .vnpay span .lable {
+    font-size: 14px;
+    line-height: 20px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.table-checkout .vnpay-method .vnpay .payment-method_detail {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    height: 100%;
+}
+
+.table-checkout .vnpay-method .vnpay .payment-method_detail img {
+    margin-right: 12px;
+    object-fit: contain;
+}
+
+.table-checkout .vnpay-method .vnpay .payment-method_title {
+    font-size: 16px;
+    line-height: 20px;
+    color: rgb(56, 56, 61);
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.table-checkout .vnpay {
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: space-evenly; */
+    border: 2px solid #CCCCCC;
+    padding: 5px;
+    border-radius: 10px;
+
+}
+
+.table-checkout .vnpay p {
+    margin: 0;
+    color: #000000;
+}
+
+.table-checkout .vnpay .vnpay-group {
+    display: flex;
+    align-items: center;
+}
+
+
+.table-checkout .terms {
+    display: flex;
+    justify-content: center;
+}
+
+.table-checkout .terms p {
+    font-size: 15px;
+    margin: 0;
+    padding-left: 10px;
+    color: #000000;
+    font-weight: normal;
+}
+
+.table-checkout .check-terms {
+    padding-top: 0;
+}
+
+
+
+
+.table-checkout .caculator td:first-child{
+    color: #757575;
+}
+
+.table-checkout .caculator td:last-child {
+    text-align: end;
+    font-weight: 600;
+}
+
+.table-checkout .caculator:last-child td:first-child {
+    color: black;
+    font-weight: 600;
+}
+
+.table-checkout .caculator:last-child td:last-child {
+    color: red;
+    font-weight: 600;
+}
+
+.check-out {
+    padding-bottom: 20px;
+}
+
+.check-out input {
+    border: none;
+    width: 100%;
+    padding: 7px 0;
+    background-color: #FF9494;
+    color: white;
+    font-weight: 900;
+}
+
+.buy-more {
+    padding: 0 15px;
+}
+
+.buy-more input {
+    width: 100%;
+    border-color: #ff9898;
+    padding: 7px 0;
+    background-color: white;
+    font-weight: 900;
+}
+
+.check-out input:active {
+    transform: scale(0.93);
+}
+
+.check-out input:hover {
+    background-color: #ff8484;
+}
+
+.buy-more input:hover {
+    background-color: white;
+}
+
+
+.buy-more input:active {
+    transform: scale(0.93);
+}
+
+.title {
+    font-weight: 900;
+}
+
+/* checkout no login */
+
+.checkout-nologin {
+    background-color: #f4f4f4;
+    min-height: 60vh;
+}
+
+
+.checkout-nologin .row {
+    width: 100%;
+    margin-bottom: 50px;
+    background-color: #f4f4f4;
+
+}
+
+.noti-checkout {
+    margin-top: 20px;
+}
+
+.noti-checkout h4 {
+    font-size: 20px;
+}
+
+.noti-checkout a {
+    font-size: 18px;
+    color: #FF6B6B;
+}
+
+.footer {
+    margin-top: 50px;
+    clear: left;
+}
+
+.back-to-cart {
+    clear: left;
+    clear: right;
+    position: absolute;
+    bottom: -109px;
+}
+

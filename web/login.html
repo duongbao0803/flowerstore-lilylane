@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login Flower</title>
+        <!-- Google font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400&display=swap"
+              rel="stylesheet">
+        <!-- <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'> -->
+        <!-- boostrap -->
+        <link rel="stylesheet" href="assets/css/bootstrap.min/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/font/css/all.css">
+        <link rel="stylesheet" href="assets/css/stylecart.css">
+        <link rel="stylesheet" href="assets/css/stylelogin.css">
+    </head>
+
+    <body onload="getCookiedata()">
+        <!-- Header & navbar  -->
+        <div class="background-img"></div>
+        <div class="outline">
+            <div class="background-url" id="container">
+                <div class="form-container  login-container" id="login">
+                    <form action="MainController" style="top: 60px;" method="POST">
+                        <div class="header">
+                            <div>SIGN IN</div>
+                        </div>
+                        <div class="login-type">
+                            <div class="inputBox">
+                                <input type="text" name="userID" required="" id="username"/>
+                                <span>UserName</span>
+                            </div>
+                            <div class="inputBox">
+                                <div class="password-input">
+                                    <input type="password" name="password" required="" id="password-text" />
+                                    <span>Password</span>
+                                </div>
+
+                            </div>
+                        </div>
+                        <li class="login-function">
+                            <span><input type="checkbox" onclick="saveInfo()">Remember Me</span>
+                            <a href="#" id="forgot-pass" onclick="forgot_pass()">Forgot Password?</a>
+                        </li>
+
+                        <div class="login-success">
+                            <input type="submit" name="action" value="SIGN IN"/>
+                        </div>
+
+                        <div class="other-login-icon">
+                            <div class="or-login">
+                                <div class="line"></div>
+                                <span>OR</span>
+                                <div class="line"></div>
+                            </div>
+                            <ul class="other-signin">
+                                <a href="#">
+                                    <li><i class="fab fa-google fa-2x"></i>Sign in with Google</li>
+                                </a>
+                            </ul>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="form-container register-container" id="register">
+                    <div class="header">
+                        <div>SIGN UP</div>
+                    </div>
+                    <form action="MainController" id="form-regis" method="POST">
+                        <div class="login-type">
+                            <div class="inputBox-signup">
+                                <div class="inputBox">
+                                    <input type="text" name="userID" required=""/>
+                                    <span>UserID</span>
+                                </div>
+                            </div>
+
+                            <div class="inputBox-signup">
+                                <div class="inputBox">
+                                    <input type="text" name="fullName" required=""/>
+                                    <span>FullName</span>
+                                </div>
+                            </div>
+
+                            <div class="inputBox-signup">
+                                <div class="inputBoxx">
+                                    <input type="text" name="roleID" required="" value="US" readonly=""/>
+                                    <span>Role ID</span>
+                                </div>
+                            </div>
+
+                            <div class="inputBox-signup">
+                                <div class="inputBox">
+                                    <div class="password-input">
+                                        <input type="password" name="password" required="" />
+                                        <span>Password</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="inputBox-signup">
+                                <div class="inputBox">
+                                    <div class="password-input">
+                                        <input type="password" name="confirm" required=""/>
+                                        <span>Rewrite Password</span>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="inputBox-signup">
+                                <div class="capcha">
+                                    <div class="captcha" id="html_element"></div>
+                                    <div id="error" style="color: red; font-size: 15px; text-align: start;"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="login-success">
+                            <input type="hidden" name="action" value="SIGN UP"/>
+                            <input type="submit" value="SIGN UP"/>
+                        </div>
+                    </form>
+                </div>
+
+
+                <div class="slide-box">
+                    <div>
+                        <h2>
+                            Welcome to, Lilylane Store.
+                        </h2>
+                        <p class="slide-box-p1">
+                            You bring the love. We’ll bring the flowers.
+                        </p>
+                        <p class="slide-box-p2">
+                            If you don't have acount before, please touch button below
+                        </p>
+
+                    </div>
+                    <button id="change" onclick="change()">
+                        Create new Account
+                    </button>
+                </div>
+            </div>
+        </div>
+
+
+
+        <script type="text/javascript" defer="">
+            var onloadCallback = function () {
+                grecaptcha.render('html_element', {
+                    'sitekey': '6LfFfrAmAAAAAAoVKML2RbJgTbneNmLVmpWs0HU1'
+                });
+            };
+        </script>
+
+        <script>
+            window.onload = function () {
+                let isValid = false;
+                const form = document.getElementById("form-regis");
+                const error = document.getElementById("error");
+
+                form.addEventListener("submit", function (event) {
+                    event.preventDefault();
+                    const response = grecaptcha.getResponse();
+                    if (response) {
+                        form.submit();
+                    } else {
+                        error.innerHTML = "Please check reCAPTCHA.";
+                    }
+                });
+            }
+        </script>
+
+
+        <script src="assets/js/bootstrap/jquery.min.js"></script>
+        <script src="assets/js/bootstrap/popper.min.js"></script>
+        <script src="assets/js/bootstrap/bootstrap.min.js"></script>
+        <script src="assets/js/jscript/code.js"></script>
+        <script src="assets/js/jscript/login.js"></script>
+        <script src="assets/js/jscript/saveInfo.js"></script>
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+        <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"async defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/js/bootstrap.bundle.min.js"></script>
+    </body>
+
+
+</html>

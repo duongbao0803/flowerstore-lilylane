@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flower Shop</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <style>
+    /* Custom CSS styles */
+    body {
+      background-color: #f8f9fa;
+    }
+
+    .jumbotron {
+      background-image: url('flower-background.jpg');
+      background-size: cover;
+      height: 400px;
+      display: flex;
+      align-items: center;
+      color: #fff;
+    }
+
+    .jumbotron h1 {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+
+    .jumbotron p {
+      font-size: 1.5rem;
+    }
+
+    .container {
+      margin-top: 30px;
+    }
+
+    .card {
+      margin-bottom: 30px;
+    }
+
+    .card img {
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card-title {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    .card-text {
+      font-size: 1rem;
+      margin-bottom: 10px;
+    }
+
+    .header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .footer {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Flower Shop</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Products</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="jumbotron text-center">
+    <h1>Welcome to our Flower Shop</h1>
+    <p>Discover a wide range of beautiful flowers for every occasion.</p>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <img src="flower1.jpg" class="card-img-top" alt="Flower 1">
+          <div class="card-body">
+            <h5 class="card-title">Roses</h5>
+            <p class="card-text">Express your love with our stunning collection of roses.</p>
+            <a href="#" class="btn btn-primary">Shop Now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card">
+          <img src="flower2.jpg" class="card-img-top" alt="Flower 2">
+          <div class="card-body">
+            <h5 class="card-title">Tulips</h5>
+            <p class="card-text">Brighten someone's day with our vibrant tulips.</p>
+            <a href="#" class="btn btn-primary">Shop Now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card">
+          <img src="flower3.jpg" class="card-img-top" alt="Flower 3">
+          <div class="card-body">
+            <h5 class="card-title">Lilies</h5>
+            <p class="card-text">Experience the elegance of lilies in our exclusive collection.</p>
+            <a href="#" class="btn btn-primary">Shop Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>&copy; 2023 Flower Shop. All rights reserved.</p>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>
