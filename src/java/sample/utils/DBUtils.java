@@ -18,7 +18,7 @@ import javax.sql.DataSource;
  * @author duong
  */
 public class DBUtils {
-    private static final String DB_NAME = "ShoppingManagement";
+    private static final String DB_NAME = "UserManagement";
     private static final String DB_USER_NAME = "sa";
     private static final String DB_PASSWORD = "12345";
 //    public static Connection getConnectionV1() throws ClassNotFoundException, SQLException{
