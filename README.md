@@ -33,12 +33,14 @@ Flower store website is developed with MVC2 model, prioritizing visually appeali
 - Back-end: JSP/Servlet, SQL Server.
 - Other: GitHub, Figma.
 
+
+
 #### References:
 - Figma: [Lilylane UI](https://www.figma.com/file/A9PMzVANLpEjgcsLpBJM5o/Lily-Lane)
 
 
 
 
-##### Content me via: tonbao0803@gmail.com
+##### Contact me via: tonbao0803@gmail.com
 
 ##### Copyright &#169; 2023 Lilylane
