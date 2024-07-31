@@ -1,7 +1,7 @@
 ## Flower Store - Lilylane
 
 <div align="center">
-    <img style="width: 500px;" src="https://media.discordapp.net/attachments/1181653924411875430/1181654064275136572/image.png?ex=6581d81a&is=656f631a&hm=6258a22029e2435b3b1bd43a2b967d05d1c201b25f695d98864981d79694894b&=&format=webp&quality=lossless" />
+    <img style="width: 200px;" src="https://firebasestorage.googleapis.com/v0/b/swp391-f3aae.appspot.com/o/Fservice%2Flily-lane-logo-web.png?alt=media&token=a5d60ea8-037e-44a9-a98e-59f0c4135a61" />
     <p>Lilylane is a simple and convenient online flower selling website, providing a variety of fresh flowers and flower delivery services.</p>
 </div>
 
