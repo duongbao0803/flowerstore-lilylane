@@ -17,8 +17,6 @@ Flower store website is developed with MVC2 model, prioritizing visually appeali
 + Admin can manage users (create, update, delete,...).
 
 
-#### Author:
-- Dương Tôn Bảo - SE171065
 
 
 #### Screen-shots
