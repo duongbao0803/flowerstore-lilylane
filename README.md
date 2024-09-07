@@ -34,7 +34,7 @@ Flower store website is developed with MVC2 model, prioritizing visually appeali
 
 
 #### References:
-- Figma: [Lilylane UI](https://www.figma.com/file/A9PMzVANLpEjgcsLpBJM5o/Lily-Lane)
+- Figma: [Lilylane UI](https://www.figma.com/design/A9PMzVANLpEjgcsLpBJM5o/Lily-Lane?node-id=1-5&t=2uu0NBK0VCzcEOjW-1)
 
 
 
